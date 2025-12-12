@@ -185,6 +185,9 @@ const translations = {
 // Current language (default: English)
 let currentLang = localStorage.getItem('language') || 'en';
 
+// Supported languages
+const SUPPORTED_LANGUAGES = ['en', 'ja'];
+
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', function() {
     // Set initial language
@@ -216,6 +219,12 @@ function updateButtonText() {
 
 // Apply translations to the page
 function setLanguage(lang) {
+    // Validate language parameter
+    if (!SUPPORTED_LANGUAGES.includes(lang)) {
+        console.error(`Invalid language: ${lang}. Falling back to English.`);
+        lang = 'en';
+    }
+    
     const t = translations[lang];
     
     // Update HTML lang attribute
@@ -316,5 +325,8 @@ function setText(id, text) {
     const element = document.getElementById(id);
     if (element) {
         element.textContent = text;
+    } else if (typeof console !== 'undefined' && console.warn) {
+        // Log warning in development mode
+        console.warn(`Element with id "${id}" not found`);
     }
 }

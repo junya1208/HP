@@ -93,6 +93,11 @@ nav a:hover {
     background-color: #2980b9;
 }
 
+.lang-toggle:focus {
+    outline: 2px solid #2980b9;
+    outline-offset: 2px;
+}
+
 /* Main Content */
 main {
     padding: 40px 0;
