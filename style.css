@@ -76,6 +76,23 @@ nav a:hover {
     color: #3498db;
 }
 
+/* Language Toggle Button */
+.lang-toggle {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.95em;
+}
+
+.lang-toggle:hover {
+    background-color: #2980b9;
+}
+
 /* Main Content */
 main {
     padding: 40px 0;
