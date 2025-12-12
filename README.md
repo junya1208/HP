@@ -9,6 +9,7 @@ A clean and minimal personal homepage designed for PhD students, researchers, an
 - **Selected Publications**: Academic publications with full citations
 - **Projects and Engineering Experience**: Professional work and projects
 - **Contact Information**: Multiple ways to get in touch
+- **Language Switcher**: Toggle between English and Japanese with full translations
 
 ## Design
 
@@ -24,7 +25,17 @@ This website is ready to be hosted on GitHub Pages. To customize:
 1. Edit `index.html` to update your personal information
 2. Replace placeholder text with your actual content
 3. Update contact links and information
-4. Optionally modify `style.css` for custom styling
+4. Update translations in `lang.js` for both English and Japanese versions
+5. Optionally modify `style.css` for custom styling
+
+### Language Switcher
+
+The website includes a language toggle button in the navigation bar that switches between English and Japanese:
+
+- Click the button to toggle languages
+- Your language preference is saved automatically
+- All content is fully translated including navigation, sections, publications, and projects
+- To customize translations, edit the `translations` object in `lang.js`
 
 ## Hosting on GitHub Pages
 
