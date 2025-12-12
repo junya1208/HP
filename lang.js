@@ -221,7 +221,7 @@ function updateButtonText() {
 function setLanguage(lang) {
     // Validate language parameter
     if (!SUPPORTED_LANGUAGES.includes(lang)) {
-        console.error(`Invalid language: ${lang}. Falling back to English.`);
+        console.warn(`Invalid language: ${lang}. Falling back to English.`);
         lang = 'en';
     }
     
@@ -325,7 +325,7 @@ function setText(id, text) {
     const element = document.getElementById(id);
     if (element) {
         element.textContent = text;
-    } else if (typeof console !== 'undefined' && console.warn) {
+    } else {
         // Log warning in development mode
         console.warn(`Element with id "${id}" not found`);
     }
