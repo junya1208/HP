@@ -2,7 +2,7 @@
 const translations = {
     en: {
         // Header
-        name: "Your Name",
+        name: "Junya Nakada",
         subtitle: "PhD Student | Researcher | Engineer",
         
         // Navigation
