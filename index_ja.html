@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="学術ホームページ - ロボティクス、コンピュータビジョン、制御における修士論文と研究成果">
+  <title>学術ホームページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="lang-switcher">
+        <a href="index.html" class="lang-link">English</a> | <a href="index_ja.html" class="lang-link active">日本語</a>
+      </div>
+      <h1>中田 順也</h1>
+      <p class="subtitle">M.Sc. | ロボティクス / コンピュータビジョン / 制御</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#research">研究</a></li>
+        <li><a href="#publications">論文・成果</a></li>
+        <li><a href="#projects">プロジェクト</a></li>
+        <li><a href="#contact">連絡先</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>自己紹介</h2>
+      <div class="content">
+        <!-- Placeholder for personal photo -->
+        <div class="personal-photo-placeholder">
+          <p>[個人写真がここに表示されます]</p>
+        </div>
+        <p>
+          私はロボティクス、コンピュータビジョン、制御の交差点で研究を行っています。最近の研究は、
+          建設現場などの実世界の安全性が重要な環境における自動化を可能にする
+          知覚・推定手法に焦点を当てています。
+        </p>
+        <p>
+          シュトゥットガルト大学（システムダイナミクス研究所）での修士研究では、YOLOv8-segと
+          平面姿勢推定（solvePnP/IPPE）を用いた型枠壁の自動アンカリングのための
+          リアルタイム意味的セグメンテーションと姿勢推定を研究し、IMUベースのグラウンドトゥルースによる評価を含めました。
+        </p>
+        <p>
+          日本での修士論文では、電圧飽和制約下でも有効なフィードフォワード制御手法の設計により
+          電気イオン軟アクチュエータの高速化に焦点を当て、シミュレーションと実験により検証しました。
+        </p>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>研究テーマ</h2>
+      <div class="content">
+
+        <div class="research-item">
+          <h3>建設ロボティクスとビジョンベース自動化</h3>
+          <!-- Placeholder for research image -->
+          <div class="research-image-placeholder">
+            <p>[研究画像がここに表示されます]</p>
+          </div>
+          <p>
+            建設自動化のための知覚パイプラインの開発：困難な照明、塵埃、混雑状況下で
+            タスク関連構造（例：アンカー穴、コンクリート部品）を検出します。
+            ロバスト性とリアルタイムロボットワークフローへの統合を重視しています。
+          </p>
+        </div>
+
+        <div class="research-item">
+          <h3>セグメンテーション/検出からの姿勢推定</h3>
+          <!-- Placeholder for research image -->
+          <div class="research-image-placeholder">
+            <p>[研究画像がここに表示されます]</p>
+          </div>
+          <p>
+            幾何学的手法（PnP / 平面姿勢推定）を用いて2D検出とセグメント化された領域から
+            物体の姿勢を推定します。カメラと壁の角度、透視歪み、バウンディングボックスの変形などの
+            誤差要因と、これらが安定性と精度に与える影響を調査しています。
+          </p>
+        </div>
+
+        <div class="research-item">
+          <h3>入力制約下での軟ロボティクス制御</h3>
+          <!-- Placeholder for research image -->
+          <div class="research-image-placeholder">
+            <p>[研究画像がここに表示されます]</p>
+          </div>
+          <p>
+            厳格な電圧制限を持つ電気イオン軟アクチュエータの制御設計。飽和による性能劣化を低減し、
+            実験における立ち上がり時間を改善するフィードフォワードアプローチの設計で、
+            実用的な展開可能性に焦点を当てています。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- THESES / PUBLICATIONS -->
+    <section id="publications">
+      <h2>論文・主要成果</h2>
+      <div class="content">
+
+        <div class="publication">
+          <h3>型枠壁の自動アンカリングのための意味的セグメンテーションと姿勢推定</h3>
+          <p class="publication-meta">
+            <strong>著者：</strong> 中田 順也<br>
+            <strong>種別：</strong> 修士論文、シュトゥットガルト大学（2025年）<br>
+            <strong>概要：</strong>
+            YOLOv8ベースの意味的セグメンテーションと姿勢推定（solvePnP/IPPE）を組み合わせた
+            リアルタイムパイプラインを提案し、型枠アンカー穴の向き・位置を検出・推定します。
+            IMUグラウンドトゥルースを用いて精度を検証し、カメラと壁の角度や透視による歪みによる
+            故障モードを分析しました。
+          </p>
+        </div>
+
+        <div class="publication">
+          <h3>コンクリート中空球体検出のためのAIベース画像処理手法の実装と比較</h3>
+          <p class="publication-meta">
+            <strong>著者：</strong> 中田 順也<br>
+            <strong>種別：</strong> 学生論文、シュトゥットガルト大学（2024年）<br>
+            <strong>概要：</strong>
+            建設環境におけるコンクリート中空球体の検出において、古典的な画像処理アプローチ
+            （ハフ変換ベースの検出）と深層学習アプローチ（YOLOv8）を比較しました。
+            現場のような条件下での学習ベースアプローチのより強いロバスト性/精度を実証しました。
+          </p>
+        </div>
+
+        <div class="publication">
+          <h3>電圧制限に対応したフィードフォワード制御による Electro-Ionic Soft Actuator の高速化</h3>
+          <p class="publication-meta">
+            <strong>著者：</strong> 中田 順也<br>
+            <strong>種別：</strong> 修士論文（豊橋技術科学大学, 2025年）<br>
+            <strong>概要：</strong>
+            電圧制限（飽和）による性能劣化を抑えつつ高速化するフィードフォワード制御器を提案。
+            数値シミュレーションと実験で有効性を検証し、従来法と比べ立ち上がり時間を短縮。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>プロジェクトとエンジニアリング経験</h2>
+      <div class="content">
+
+        <div class="project">
+          <h3>リアルタイムビジョン + 姿勢推定パイプライン（YOLOv8-seg + PnP/IPPE）</h3>
+          <!-- Placeholder for project image -->
+          <div class="project-image-placeholder">
+            <p>[プロジェクト画像がここに表示されます]</p>
+          </div>
+          <p class="project-meta">
+            <strong>役割：</strong> 研究 / 実装 |
+            <strong>期間：</strong> 2024年 - 2025年
+          </p>
+          <p>
+            リアルタイム検出/セグメンテーションパイプラインを実装し、型枠アンカリング自動化のための
+            幾何学的姿勢推定を統合しました。IMUグラウンドトゥルースに対する評価手順を構築し、
+            実際の建設のような条件下での誤差源を分析しました。
+          </p>
+          <p><strong>技術：</strong> Python、OpenCV、Ultralytics YOLOv8、Intel RealSense、IMU</p>
+        </div>
+
+        <div class="project">
+          <h3>コンクリート中空球体検出：ハフ変換 vs YOLOv8</h3>
+          <!-- Placeholder for project image -->
+          <div class="project-image-placeholder">
+            <p>[プロジェクト画像がここに表示されます]</p>
+          </div>
+          <p class="project-meta">
+            <strong>役割：</strong> 研究 / ベンチマーク |
+            <strong>期間：</strong> 2024年
+          </p>
+          <p>
+            コンクリート中空球体の古典的な画像処理検出と深層学習検出を比較するベンチマークを構築しました。
+            背景ノイズ、オクルージョン、汎化などの実用的な問題に焦点を当てました。
+          </p>
+          <p><strong>技術：</strong> Python、OpenCV、YOLOv8、データラベリング / 評価</p>
+        </div>
+
+        <div class="project">
+          <h3>電圧制限下での電気イオン軟アクチュエータのフィードフォワード制御</h3>
+          <!-- Placeholder for project image -->
+          <div class="project-image-placeholder">
+            <p>[プロジェクト画像がここに表示されます]</p>
+          </div>
+          <p class="project-meta">
+            <strong>役割：</strong> 制御設計 / 実験 |
+            <strong>期間：</strong> 2024年 - 2025年
+          </p>
+          <p>
+            電圧飽和による性能損失を補償し、応答速度を改善するコントローラを設計しました。
+            シミュレーションと実験を通じて検証し、実用的な制約（ワインドアップ、飽和動作、再現性）を調査しました。
+          </p>
+          <p><strong>技術：</strong> MATLAB/Simulink、制御理論、実験セットアップと測定</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>連絡先情報</h2>
+      <div class="content">
+        <div class="contact-info">
+          <p>
+            <strong>メール：</strong> <a href="mailto:yourname@university.edu">yourname@university.edu</a>
+          </p>
+          <p>
+            <strong>所属：</strong>
+            シュトゥットガルト大学（M.Sc.）/ 豊橋技術科学大学（M.Eng.）<br>
+            シュトゥットガルト、ドイツ / 日本
+          </p>
+          <p>
+            <strong>リンク：</strong><br>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+            <a href="https://scholar.google.com/citations?user=YOURID" target="_blank">Google Scholar</a> |
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+          </p>
+          <p class="collaboration-note">
+            私は特にロボティクス、コンピュータビジョン、実世界自動化のための制御における
+            研究協力と産業パートナーシップに開かれています。お気軽にご連絡ください。
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 中田 順也. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
