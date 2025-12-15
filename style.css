@@ -16,6 +16,14 @@ body {
     background-color: #fff;
 }
 
+/* Images: responsive by default */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: transparent;
+}
+
 /* Container */
 .container {
     max-width: 900px;
@@ -234,10 +242,10 @@ section h3 {
     font-style: italic;
 }
 
-/* Image Placeholders */
-.personal-photo-placeholder,
-.research-image-placeholder,
-.project-image-placeholder {
+/* Image Placeholders: show styling only when empty */
+.personal-photo-placeholder:empty,
+.research-image-placeholder:empty,
+.project-image-placeholder:empty {
     background-color: #e9ecef;
     border: 2px dashed #adb5bd;
     padding: 40px 20px;
@@ -259,6 +267,14 @@ section h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* When placeholders contain an image, remove extra spacing */
+.personal-photo-placeholder img,
+.research-image-placeholder img,
+.project-image-placeholder img {
+    margin: 0;
+    border: 0;
 }
 
 /* Footer */
