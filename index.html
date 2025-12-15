@@ -6,25 +6,26 @@
   <meta name="description" content="Academic homepage - MSc theses and research results in robotics, computer vision, and control">
   <title>Academic Homepage</title>
   <link rel="stylesheet" href="style.css">
-  <script src="lang.js"></script>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1 id="header-name">Junya Nakada</h1>
-      <p class="subtitle" id="header-subtitle">M.Sc. | Robotics / Computer Vision / Control</p>
+      <div class="lang-switcher">
+        <a href="index.html" class="lang-link active">English</a> | <a href="index_ja.html" class="lang-link">日本語</a>
+      </div>
+      <h1>Junya Nakada</h1>
+      <p class="subtitle">M.Sc. | Robotics / Computer Vision / Control</p>
     </div>
   </header>
 
   <nav>
     <div class="container">
       <ul>
-        <li><a href="#about" id="nav-about">About</a></li>
-        <li><a href="#research" id="nav-research">Research</a></li>
-        <li><a href="#publications" id="nav-publications">Theses & Publications</a></li>
-        <li><a href="#projects" id="nav-projects">Projects</a></li>
-        <li><a href="#contact" id="nav-contact">Contact</a></li>
-        <li><button id="lang-toggle" class="lang-toggle">Japanese/日本語</button></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Theses & Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -33,20 +34,24 @@
 
     <!-- ABOUT -->
     <section id="about">
-      <h2 id="about-title">About Me</h2>
+      <h2>About Me</h2>
       <div class="content">
-        <p id="about-p1">
+        <!-- Placeholder for personal photo -->
+        <div class="personal-photo-placeholder">
+          <p>[Your personal photo will be displayed here]</p>
+        </div>
+        <p>
           I work at the intersection of robotics, computer vision, and control. My recent research focuses on
           perception and estimation methods that enable automation in real-world, safety-critical environments
           such as construction sites.
         </p>
-        <p id="about-p2">
-          My master’s work at the University of Stuttgart (Institute for System Dynamics) studied real-time
+        <p>
+          My master's work at the University of Stuttgart (Institute for System Dynamics) studied real-time
           semantic segmentation and pose estimation for automated anchoring of formwork walls using YOLOv8-seg
           and planar pose estimation (solvePnP/IPPE), including evaluation with IMU-based ground truth.
         </p>
-        <p id="about-p3">
-          In Japan, my master’s thesis focused on accelerating an electro-ionic soft actuator by designing
+        <p>
+          In Japan, my master's thesis focused on accelerating an electro-ionic soft actuator by designing
           a feedforward control method that remains effective under voltage saturation constraints,
           validated by simulation and experiments.
         </p>
@@ -55,12 +60,16 @@
 
     <!-- RESEARCH -->
     <section id="research">
-      <h2 id="research-title">Research Topics</h2>
+      <h2>Research Topics</h2>
       <div class="content">
 
         <div class="research-item">
-          <h3 id="research-item1-title">Construction Robotics & Vision-based Automation</h3>
-          <p id="research-item1-text">
+          <h3>Construction Robotics & Vision-based Automation</h3>
+          <!-- Placeholder for research image -->
+          <div class="research-image-placeholder">
+            <p>[Research image will be displayed here]</p>
+          </div>
+          <p>
             Developing perception pipelines for construction automation: detecting task-relevant structures
             (e.g., anchor holes, concrete components) under challenging lighting, dust, and clutter.
             Emphasis on robustness and integration into real-time robotic workflows.
@@ -68,8 +77,12 @@
         </div>
 
         <div class="research-item">
-          <h3 id="research-item2-title">Pose Estimation from Segmentation/Detections</h3>
-          <p id="research-item2-text">
+          <h3>Pose Estimation from Segmentation/Detections</h3>
+          <!-- Placeholder for research image -->
+          <div class="research-image-placeholder">
+            <p>[Research image will be displayed here]</p>
+          </div>
+          <p>
             Estimating object pose from 2D detections and segmented regions using geometric methods
             (PnP / planar pose estimation). Investigating error factors such as camera-wall angle,
             perspective distortion, and bounding box deformation, and how these impact stability and accuracy.
@@ -77,8 +90,12 @@
         </div>
 
         <div class="research-item">
-          <h3 id="research-item3-title">Soft Robotics Control under Input Constraints</h3>
-          <p id="research-item3-text">
+          <h3>Soft Robotics Control under Input Constraints</h3>
+          <!-- Placeholder for research image -->
+          <div class="research-image-placeholder">
+            <p>[Research image will be displayed here]</p>
+          </div>
+          <p>
             Control design for electro-ionic soft actuators with strict voltage limits. Designing feedforward
             approaches that reduce performance degradation from saturation and improve rise-time in experiments,
             with a focus on practical deployability.
@@ -90,48 +107,42 @@
 
     <!-- THESES / PUBLICATIONS -->
     <section id="publications">
-      <h2 id="publications-title">Theses & Selected Results</h2>
+      <h2>Theses & Selected Results</h2>
       <div class="content">
 
         <div class="publication">
-          <h3 id="pub1-title">Semantic segmentation and pose estimation for automated anchoring of formwork walls</h3>
+          <h3>Semantic segmentation and pose estimation for automated anchoring of formwork walls</h3>
           <p class="publication-meta">
-            <strong id="pub1-authors">Author:</strong> <span id="pub1-authors-list">Junya Nakada</span><br>
-            <strong id="pub1-conference">Type:</strong> <span id="pub1-conference-name">Master’s Thesis, University of Stuttgart (2025)</span><br>
-            <strong id="pub1-abstract">Summary:</strong>
-            <span id="pub1-abstract-text">
-              Proposed a real-time pipeline combining YOLOv8-based semantic segmentation with pose estimation
-              (solvePnP/IPPE) to detect and estimate the orientation/position of formwork anchor holes.
-              Experiments validated accuracy using IMU ground truth, and analyzed failure modes caused by
-              camera-wall angles and perspective-induced distortions.
-            </span>
+            <strong>Author:</strong> Junya Nakada<br>
+            <strong>Type:</strong> Master's Thesis, University of Stuttgart (2025)<br>
+            <strong>Summary:</strong>
+            Proposed a real-time pipeline combining YOLOv8-based semantic segmentation with pose estimation
+            (solvePnP/IPPE) to detect and estimate the orientation/position of formwork anchor holes.
+            Experiments validated accuracy using IMU ground truth, and analyzed failure modes caused by
+            camera-wall angles and perspective-induced distortions.
           </p>
         </div>
 
         <div class="publication">
-          <h3 id="pub2-title">Implementation and comparison of AI-based image-processing methods for concrete hollow spheres detection</h3>
+          <h3>Implementation and comparison of AI-based image-processing methods for concrete hollow spheres detection</h3>
           <p class="publication-meta">
-            <strong id="pub2-authors">Author:</strong> <span id="pub2-authors-list">Junya Nakada</span><br>
-            <strong id="pub2-journal">Type:</strong> <span id="pub2-journal-name">Student Thesis, University of Stuttgart (2024)</span><br>
-            <strong id="pub2-abstract">Summary:</strong>
-            <span id="pub2-abstract-text">
-              Compared a classical image-processing approach (Hough Transform-based detection) with a deep-learning
-              approach (YOLOv8) for detecting concrete hollow spheres in construction environments.
-              Demonstrated stronger robustness/accuracy of the learning-based approach under site-like conditions.
-            </span>
+            <strong>Author:</strong> Junya Nakada<br>
+            <strong>Type:</strong> Student Thesis, University of Stuttgart (2024)<br>
+            <strong>Summary:</strong>
+            Compared a classical image-processing approach (Hough Transform-based detection) with a deep-learning
+            approach (YOLOv8) for detecting concrete hollow spheres in construction environments.
+            Demonstrated stronger robustness/accuracy of the learning-based approach under site-like conditions.
           </p>
         </div>
 
         <div class="publication">
-          <h3 id="pub3-title">電圧制限に対応したフィードフォワード制御による Electro-Ionic Soft Actuator の高速化</h3>
+          <h3>電圧制限に対応したフィードフォワード制御による Electro-Ionic Soft Actuator の高速化</h3>
           <p class="publication-meta">
-            <strong id="pub3-authors">Author:</strong> <span id="pub3-authors-list">中田 順也</span><br>
-            <strong id="pub3-conference">Type:</strong> <span id="pub3-conference-name">修士論文（豊橋技術科学大学, 2025）</span><br>
-            <strong id="pub3-abstract">Summary:</strong>
-            <span id="pub3-abstract-text">
-              電圧制限（飽和）による性能劣化を抑えつつ高速化するフィードフォワード制御器を提案。
-              数値シミュレーションと実験で有効性を検証し、従来法と比べ立ち上がり時間を短縮。
-            </span>
+            <strong>Author:</strong> 中田 順也<br>
+            <strong>Type:</strong> 修士論文（豊橋技術科学大学, 2025）<br>
+            <strong>Summary:</strong>
+            電圧制限（飽和）による性能劣化を抑えつつ高速化するフィードフォワード制御器を提案。
+            数値シミュレーションと実験で有効性を検証し、従来法と比べ立ち上がり時間を短縮。
           </p>
         </div>
 
@@ -140,49 +151,61 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2 id="projects-title">Projects and Engineering Experience</h2>
+      <h2>Projects and Engineering Experience</h2>
       <div class="content">
 
         <div class="project">
-          <h3 id="project1-title">Real-time Vision + Pose Estimation Pipeline (YOLOv8-seg + PnP/IPPE)</h3>
+          <h3>Real-time Vision + Pose Estimation Pipeline (YOLOv8-seg + PnP/IPPE)</h3>
+          <!-- Placeholder for project image -->
+          <div class="project-image-placeholder">
+            <p>[Project image will be displayed here]</p>
+          </div>
           <p class="project-meta">
-            <strong id="project1-role">Role:</strong> <span id="project1-role-text">Research / Implementation</span> |
-            <strong id="project1-duration">Duration:</strong> <span id="project1-duration-text">2024 - 2025</span>
+            <strong>Role:</strong> Research / Implementation |
+            <strong>Duration:</strong> 2024 - 2025
           </p>
-          <p id="project1-text">
+          <p>
             Implemented a real-time detection/segmentation pipeline and integrated geometric pose estimation
             for formwork anchoring automation. Built evaluation procedures against IMU ground truth and
             analyzed error sources in real construction-like conditions.
           </p>
-          <p><strong id="project1-tech">Technologies:</strong> <span id="project1-tech-list">Python, OpenCV, Ultralytics YOLOv8, Intel RealSense, IMU</span></p>
+          <p><strong>Technologies:</strong> Python, OpenCV, Ultralytics YOLOv8, Intel RealSense, IMU</p>
         </div>
 
         <div class="project">
-          <h3 id="project2-title">Concrete Hollow Sphere Detection: Hough Transform vs YOLOv8</h3>
+          <h3>Concrete Hollow Sphere Detection: Hough Transform vs YOLOv8</h3>
+          <!-- Placeholder for project image -->
+          <div class="project-image-placeholder">
+            <p>[Project image will be displayed here]</p>
+          </div>
           <p class="project-meta">
-            <strong id="project2-role">Role:</strong> <span id="project2-role-text">Research / Benchmarking</span> |
-            <strong id="project2-duration">Duration:</strong> <span id="project2-duration-text">2024</span>
+            <strong>Role:</strong> Research / Benchmarking |
+            <strong>Duration:</strong> 2024
           </p>
-          <p id="project2-text">
+          <p>
             Built a benchmark to compare classical image-processing detection and deep learning detection
             for concrete hollow spheres. Focused on practical issues such as background noise, occlusion,
             and generalization.
           </p>
-          <p><strong id="project2-tech">Technologies:</strong> <span id="project2-tech-list">Python, OpenCV, YOLOv8, Data labeling / evaluation</span></p>
+          <p><strong>Technologies:</strong> Python, OpenCV, YOLOv8, Data labeling / evaluation</p>
         </div>
 
         <div class="project">
-          <h3 id="project3-title">Feedforward Control for Electro-Ionic Soft Actuator under Voltage Limits</h3>
+          <h3>Feedforward Control for Electro-Ionic Soft Actuator under Voltage Limits</h3>
+          <!-- Placeholder for project image -->
+          <div class="project-image-placeholder">
+            <p>[Project image will be displayed here]</p>
+          </div>
           <p class="project-meta">
-            <strong id="project3-role">Role:</strong> <span id="project3-role-text">Control Design / Experiments</span> |
-            <strong id="project3-duration">Duration:</strong> <span id="project3-duration-text">2024 - 2025</span>
+            <strong>Role:</strong> Control Design / Experiments |
+            <strong>Duration:</strong> 2024 - 2025
           </p>
-          <p id="project3-text">
+          <p>
             Designed a controller that compensates performance loss due to voltage saturation and improves
             response speed. Validated through simulations and experiments and investigated practical
             constraints (windup, saturation behavior, reproducibility).
           </p>
-          <p><strong id="project3-tech">Technologies:</strong> <span id="project3-tech-list">MATLAB/Simulink, Control theory, Experimental setup & measurement</span></p>
+          <p><strong>Technologies:</strong> MATLAB/Simulink, Control theory, Experimental setup & measurement</p>
         </div>
 
       </div>
@@ -190,24 +213,24 @@
 
     <!-- CONTACT -->
     <section id="contact">
-      <h2 id="contact-title">Contact Information</h2>
+      <h2>Contact Information</h2>
       <div class="content">
         <div class="contact-info">
           <p>
-            <strong id="contact-email">Email:</strong> <a href="mailto:yourname@university.edu">yourname@university.edu</a>
+            <strong>Email:</strong> <a href="mailto:yourname@university.edu">yourname@university.edu</a>
           </p>
           <p>
-            <strong id="contact-office">Affiliation:</strong>
-            <span id="contact-office-text">University of Stuttgart (M.Sc.) / Toyohashi University of Technology (M.Eng.)</span><br>
-            <span id="contact-office-location">Stuttgart, Germany / Japan</span>
+            <strong>Affiliation:</strong>
+            University of Stuttgart (M.Sc.) / Toyohashi University of Technology (M.Eng.)<br>
+            Stuttgart, Germany / Japan
           </p>
           <p>
-            <strong id="contact-links">Links:</strong><br>
+            <strong>Links:</strong><br>
             <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
             <a href="https://scholar.google.com/citations?user=YOURID" target="_blank">Google Scholar</a> |
             <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
           </p>
-          <p class="collaboration-note" id="contact-collaboration">
+          <p class="collaboration-note">
             I am open to research collaborations and industry partnerships, especially in robotics,
             computer vision, and control for real-world automation. Please feel free to reach out.
           </p>
@@ -219,7 +242,7 @@
 
   <footer>
     <div class="container">
-      <p id="footer-copyright">&copy; 2025 Junya Nakada. All rights reserved.</p>
+      <p>&copy; 2025 Junya Nakada. All rights reserved.</p>
     </div>
   </footer>
 </body>
