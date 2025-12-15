@@ -41,63 +41,56 @@
           <p>[個人写真がここに表示されます]</p>
         </div>
         <p>
-          私はロボティクス、コンピュータビジョン、制御の交差点で研究を行っています。最近の研究は、
-          建設現場などの実世界の安全性が重要な環境における自動化を可能にする
-          知覚・推定手法に焦点を当てています。
+          豊橋技術科学大学 知能材料ロボティクス研究室で博士後期課程1年に在籍しています。研究分野は、イオン導電性高分子アクチュエータを中心とした知能材料の制御、機械学習を活用したロボティクス、コンピュータビジョンです。
         </p>
         <p>
-          シュトゥットガルト大学（システムダイナミクス研究所）での修士研究では、YOLOv8-segと
-          平面姿勢推定（solvePnP/IPPE）を用いた型枠壁の自動アンカリングのための
-          リアルタイム意味的セグメンテーションと姿勢推定を研究し、IMUベースのグラウンドトゥルースによる評価を含めました。
+          民間企業(Kasaero GmbH, Germany)でフルタイムエンジニアとして、燃料電池や無人飛行機のシステム、四輪ロボットの開発に携わりました。研究や仕事以外の個人プロジェクトも行っており、時系列畳み込みニューラルネットワークを用いた状態推定、ROSベースの自律走行ロボット開発などがあります。
         </p>
         <p>
-          日本での修士論文では、電圧飽和制約下でも有効なフィードフォワード制御手法の設計により
-          電気イオン軟アクチュエータの高速化に焦点を当て、シミュレーションと実験により検証しました。
+          学術的な関心は、ロボティクス、機械学習、制御システムにあります。特に、最近は実世界の課題に対する自律ロボットの応用に取り組んでいます。
         </p>
       </div>
     </section>
 
     <!-- RESEARCH -->
     <section id="research">
-      <h2>研究テーマ</h2>
+      <h2>進行中の研究/プロジェクト</h2>
       <div class="content">
 
         <div class="research-item">
-          <h3>建設ロボティクスとビジョンベース自動化</h3>
+          <h3>TCNを用いたペルチェ素子の温度推定</h3>
           <!-- Placeholder for research image -->
           <div class="research-image-placeholder">
             <p>[研究画像がここに表示されます]</p>
           </div>
           <p>
-            建設自動化のための知覚パイプラインの開発：困難な照明、塵埃、混雑状況下で
-            タスク関連構造（例：アンカー穴、コンクリート部品）を検出します。
-            ロバスト性とリアルタイムロボットワークフローへの統合を重視しています。
+            時系列畳み込みニューラルネットワーク（TCN）を使用して、ペルチェ素子の温度応答を
+            電流入力からリアルタイムで推定する研究です。実験データを収集し、モデルの精度と
+            応答速度を評価しています。
           </p>
         </div>
 
         <div class="research-item">
-          <h3>セグメンテーション/検出からの姿勢推定</h3>
+          <h3>メカナムホイール四輪ロボットの自律走行</h3>
           <!-- Placeholder for research image -->
           <div class="research-image-placeholder">
             <p>[研究画像がここに表示されます]</p>
           </div>
           <p>
-            幾何学的手法（PnP / 平面姿勢推定）を用いて2D検出とセグメント化された領域から
-            物体の姿勢を推定します。カメラと壁の角度、透視歪み、バウンディングボックスの変形などの
-            誤差要因と、これらが安定性と精度に与える影響を調査しています。
+            ROSをベースにしたメカナムホイール四輪ロボットの自律走行システムの開発。
+            SLAM、経路計画、障害物回避アルゴリズムを統合し、将来的な応用研究のノウハウを構築しています。
           </p>
         </div>
 
         <div class="research-item">
-          <h3>入力制約下での軟ロボティクス制御</h3>
+          <h3>強化学習による二輪倒立振子ロボットの制御</h3>
           <!-- Placeholder for research image -->
           <div class="research-image-placeholder">
             <p>[研究画像がここに表示されます]</p>
           </div>
           <p>
-            厳格な電圧制限を持つ電気イオン軟アクチュエータの制御設計。飽和による性能劣化を低減し、
-            実験における立ち上がり時間を改善するフィードフォワードアプローチの設計で、
-            実用的な展開可能性に焦点を当てています。
+            強化学習アルゴリズムを使用して、二輪倒立振子ロボットのバランス制御と軌道追従を実現する研究です。
+            シミュレーションと実機での実験を通じて、学習効率と制御性能を評価しています。
           </p>
         </div>
 
@@ -110,27 +103,24 @@
       <div class="content">
 
         <div class="publication">
-          <h3>型枠壁の自動アンカリングのための意味的セグメンテーションと姿勢推定</h3>
+          <h3>Accelerating electro-ionic soft actuators by feedforward control and the performance degradation by voltage limits</h3>
           <p class="publication-meta">
             <strong>著者：</strong> 中田 順也<br>
-            <strong>種別：</strong> 修士論文、シュトゥットガルト大学（2025年）<br>
+            <strong>種別：</strong> 国際会議論文（SPIE, 2024年）<br>
             <strong>概要：</strong>
-            YOLOv8ベースの意味的セグメンテーションと姿勢推定（solvePnP/IPPE）を組み合わせた
-            リアルタイムパイプラインを提案し、型枠アンカー穴の向き・位置を検出・推定します。
-            IMUグラウンドトゥルースを用いて精度を検証し、カメラと壁の角度や透視による歪みによる
-            故障モードを分析しました。
+            KAIST(South Korea)との共同研究において作製したElectro-Ionic Soft Actuatorの高速化を目指す研究です。アクチュエータに対して、電圧飽和を適用したところ、性能劣化が発生することを発見しました。論文では、どのような条件において、どの程度の性能劣化が発生するかを数値シミュレーションと実験で明らかにしました。
           </p>
         </div>
 
         <div class="publication">
-          <h3>コンクリート中空球体検出のためのAIベース画像処理手法の実装と比較</h3>
+          <h3>Semantic segmentation and pose estimation for automated anchoring of formwork walls</h3>
           <p class="publication-meta">
             <strong>著者：</strong> 中田 順也<br>
-            <strong>種別：</strong> 学生論文、シュトゥットガルト大学（2024年）<br>
+            <strong>種別：</strong> 修士論文（University of Stuttgart, 2025年）<br>
             <strong>概要：</strong>
-            建設環境におけるコンクリート中空球体の検出において、古典的な画像処理アプローチ
-            （ハフ変換ベースの検出）と深層学習アプローチ（YOLOv8）を比較しました。
-            現場のような条件下での学習ベースアプローチのより強いロバスト性/精度を実証しました。
+            YOLOv8ベースのSemantic Segmentationと姿勢推定を組み合わせた
+            リアルタイムパイプラインを提案し、型枠アンカー穴の向き・位置を検出・推定した研究です。
+            IMU Ground Truthを用いて精度を検証し、推定精度の向上のための誤差要因を分析しました。
           </p>
         </div>
 
@@ -140,8 +130,19 @@
             <strong>著者：</strong> 中田 順也<br>
             <strong>種別：</strong> 修士論文（豊橋技術科学大学, 2025年）<br>
             <strong>概要：</strong>
-            電圧制限（飽和）による性能劣化を抑えつつ高速化するフィードフォワード制御器を提案。
-            数値シミュレーションと実験で有効性を検証し、従来法と比べ立ち上がり時間を短縮。
+            Electro-Ionic Soft Actuatorの高速化とその最適パラメータを探索するための研究です。電圧制限（飽和）による性能劣化を抑えつつ高速化を実現できるフィードフォワード制御器を提案しました。
+          </p>
+        </div>
+
+        <div class="publication">
+          <h3>Implementation and Comparison of AI-based Image-Processing Methods for concrete hollow sphere detection</h3>
+          <p class="publication-meta">
+            <strong>著者：</strong> 中田 順也<br>
+            <strong>種別：</strong> Student Thesis（University of Stuttgart, 2024年）<br>
+            <strong>概要：</strong>
+            建設環境におけるコンクリート中空球体の検出において、古典的な画像処理アプローチ
+            （ハフ変換ベースの検出）と深層学習アプローチ（YOLOv8）を比較した研究です。
+            実際の建設現場に近い条件下での学習ベースアプローチのより強いロバスト性/精度を実証しました。
           </p>
         </div>
 
@@ -154,55 +155,55 @@
       <div class="content">
 
         <div class="project">
-          <h3>リアルタイムビジョン + 姿勢推定パイプライン（YOLOv8-seg + PnP/IPPE）</h3>
+          <h3>ステアリング式全方向移動ロボットの開発</h3>
           <!-- Placeholder for project image -->
           <div class="project-image-placeholder">
             <p>[プロジェクト画像がここに表示されます]</p>
           </div>
           <p class="project-meta">
-            <strong>役割：</strong> 研究 / 実装 |
-            <strong>期間：</strong> 2024年 - 2025年
+            <strong>役割：</strong> 開発 / 実装 |
+            <strong>期間：</strong> 2024年 - 2025年 |
+            <strong>会社：</strong> Kasaero GmbH, Germany
           </p>
           <p>
-            リアルタイム検出/セグメンテーションパイプラインを実装し、型枠アンカリング自動化のための
-            幾何学的姿勢推定を統合しました。IMUグラウンドトゥルースに対する評価手順を構築し、
-            実際の建設のような条件下での誤差源を分析しました。
+            ROSをベースにしたステアリング式全方向移動ロボットを設計・構築しました。四輪が独立して駆動すること全方向への移動を可能にし、RTK-GPSを含むセンサ統合により、正確な経路追跡機能を実現しました。また、高速で安定した移動性能を達成しました。
           </p>
-          <p><strong>技術：</strong> Python、OpenCV、Ultralytics YOLOv8、Intel RealSense、IMU</p>
+          <p><strong>技術：</strong> ROS、RTK-GPS、センサフュージョン、CAN通信、電装インテグレーション、センサ統合</p>
         </div>
 
         <div class="project">
-          <h3>コンクリート中空球体検出：ハフ変換 vs YOLOv8</h3>
+          <h3>燃料電池システムの開発</h3>
           <!-- Placeholder for project image -->
           <div class="project-image-placeholder">
             <p>[プロジェクト画像がここに表示されます]</p>
           </div>
           <p class="project-meta">
-            <strong>役割：</strong> 研究 / ベンチマーク |
-            <strong>期間：</strong> 2024年
+            <strong>役割：</strong> 開発 / 実装 |
+            <strong>期間：</strong> 2024年 - 2025年 |
+            <strong>会社：</strong> Kasaero GmbH, Germany
           </p>
           <p>
-            コンクリート中空球体の古典的な画像処理検出と深層学習検出を比較するベンチマークを構築しました。
-            背景ノイズ、オクルージョン、汎化などの実用的な問題に焦点を当てました。
+            燃料電池システムの設計と実装に携わり、水素供給システムの制御や各種センサの統合を担当しました。
+            動作試験の実施、データ収集、解析を行い、システムの性能最適化に貢献しました。
           </p>
-          <p><strong>技術：</strong> Python、OpenCV、YOLOv8、データラベリング / 評価</p>
+          <p><strong>技術：</strong> PLC、CAN通信、適応制御、センサ統合</p>
         </div>
 
         <div class="project">
-          <h3>電圧制限下での電気イオン軟アクチュエータのフィードフォワード制御</h3>
+          <h3>新型ドローンの制御設計、電装、デモンストレーション</h3>
           <!-- Placeholder for project image -->
           <div class="project-image-placeholder">
             <p>[プロジェクト画像がここに表示されます]</p>
           </div>
           <p class="project-meta">
-            <strong>役割：</strong> 制御設計 / 実験 |
-            <strong>期間：</strong> 2024年 - 2025年
+            <strong>役割：</strong> 制御設計 / 電装 / 実験 |
+            <strong>期間：</strong> 2025年 |
+            <strong>会社：</strong> Kasaero GmbH, Germany
           </p>
           <p>
-            電圧飽和による性能損失を補償し、応答速度を改善するコントローラを設計しました。
-            シミュレーションと実験を通じて検証し、実用的な制約（ワインドアップ、飽和動作、再現性）を調査しました。
+            新型ドローンの制御システム設計、電装インテグレーション、飛行実験を担当しました。安定した飛行性能を実現するためのモータ制御器の設計と調整を行い、各種センサと飛行システムの統合を成功させました。
           </p>
-          <p><strong>技術：</strong> MATLAB/Simulink、制御理論、実験セットアップと測定</p>
+          <p><strong>技術：</strong>EMI対策、モータ制御、センサ統合、飛行制御システム</p>
         </div>
 
       </div>
@@ -214,22 +215,20 @@
       <div class="content">
         <div class="contact-info">
           <p>
-            <strong>メール：</strong> <a href="mailto:yourname@university.edu">yourname@university.edu</a>
+            <strong>メール：</strong> <a href="mailto:nakada.junya.vt@tut.jp">nakada.junya.vt@tut.jp</a>
           </p>
           <p>
             <strong>所属：</strong>
-            シュトゥットガルト大学（M.Sc.）/ 豊橋技術科学大学（M.Eng.）<br>
-            シュトゥットガルト、ドイツ / 日本
+            豊橋技術科学大学 知能材料ロボティクス研究室
+            (https://smr.me.tut.ac.jp/)
           </p>
           <p>
             <strong>リンク：</strong><br>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-            <a href="https://scholar.google.com/citations?user=YOURID" target="_blank">Google Scholar</a> |
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank">Qiita</a> |
+            <a href="https://scholar.google.com/citations?user=YOURID" target="_blank">Researchgate</a> |
           </p>
           <p class="collaboration-note">
-            私は特にロボティクス、コンピュータビジョン、実世界自動化のための制御における
-            研究協力と産業パートナーシップに開かれています。お気軽にご連絡ください。
+            共同研究やプロジェクトの提案については、上記のメールアドレスまでお気軽にご連絡ください。
           </p>
         </div>
       </div>
