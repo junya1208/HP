@@ -22,20 +22,19 @@ A clean and minimal personal homepage designed for PhD students, researchers, an
 
 This website is ready to be hosted on GitHub Pages. To customize:
 
-1. Edit `index.html` to update your personal information
-2. Replace placeholder text with your actual content
-3. Update contact links and information
-4. Update translations in `lang.js` for both English and Japanese versions
+1. Edit `index.html` to update your English personal information
+2. Edit `index_ja.html` to update your Japanese personal information
+3. Replace placeholder text with your actual content
+4. Update contact links and information
 5. Optionally modify `style.css` for custom styling
 
 ### Language Switcher
 
-The website includes a language toggle button in the navigation bar that switches between English and Japanese:
+The website includes separate files for each language:
 
-- Click the button to toggle languages
-- Your language preference is saved automatically
-- All content is fully translated including navigation, sections, publications, and projects
-- To customize translations, edit the `translations` object in `lang.js`
+- `index.html` - English version
+- `index_ja.html` - Japanese version
+- Language switcher links are provided in the header of each page
 
 ## Hosting on GitHub Pages
 
