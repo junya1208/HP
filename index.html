@@ -36,69 +36,62 @@
     <section id="about">
       <h2>About Me</h2>
       <div class="content">
-        <!-- Placeholder for personal photo -->
+        <!-- Personal photo on the right -->
         <div class="personal-photo-placeholder">
-          <p>[Your personal photo will be displayed here]</p>
+          <img class="personal-photo" src="images/me.png" alt="Photo of Junya Nakada">
         </div>
         <p>
-          I work at the intersection of robotics, computer vision, and control. My recent research focuses on
-          perception and estimation methods that enable automation in real-world, safety-critical environments
-          such as construction sites.
+          I am a first-year doctoral student at the Smart Materials Robotics Laboratory, Toyohashi University of Technology.
+          My research areas include control of electro-ionic soft actuators (ionic polymer actuators), robotics using
+          machine learning, and computer vision.
         </p>
         <p>
-          My master's work at the University of Stuttgart (Institute for System Dynamics) studied real-time
-          semantic segmentation and pose estimation for automated anchoring of formwork walls using YOLOv8-seg
-          and planar pose estimation (solvePnP/IPPE), including evaluation with IMU-based ground truth.
+          I worked full-time as an engineer at Kasaero GmbH (Germany) on fuel-cell and UAV systems and the development
+          of a four-wheel robot. I also pursue personal projects, such as state estimation using temporal convolutional
+          networks and ROS-based autonomous mobile robots.
         </p>
         <p>
-          In Japan, my master's thesis focused on accelerating an electro-ionic soft actuator by designing
-          a feedforward control method that remains effective under voltage saturation constraints,
-          validated by simulation and experiments.
+          My academic interests are in robotics, machine learning, and control systems. Recently, I have been focusing on
+          applying autonomous robots to real-world problems.
         </p>
       </div>
     </section>
 
     <!-- RESEARCH -->
     <section id="research">
-      <h2>Research Topics</h2>
+      <h2>Ongoing Research / Projects</h2>
       <div class="content">
 
         <div class="research-item">
-          <h3>Construction Robotics & Vision-based Automation</h3>
-          <!-- Placeholder for research image -->
+          <h3>Temperature Estimation of a Peltier Element Using TCN</h3>
           <div class="research-image-placeholder">
-            <p>[Research image will be displayed here]</p>
+            <img src="images/TCN.png" alt="TCN temperature estimation">
           </div>
           <p>
-            Developing perception pipelines for construction automation: detecting task-relevant structures
-            (e.g., anchor holes, concrete components) under challenging lighting, dust, and clutter.
-            Emphasis on robustness and integration into real-time robotic workflows.
+            Using a temporal convolutional network (TCN) to estimate the temperature response of a Peltier element
+            in real time from current input. I collect experimental data and evaluate the model’s accuracy and response speed.
           </p>
         </div>
 
         <div class="research-item">
-          <h3>Pose Estimation from Segmentation/Detections</h3>
-          <!-- Placeholder for research image -->
+          <h3>Autonomous Navigation of a Mecanum-Wheel Robot</h3>
           <div class="research-image-placeholder">
-            <p>[Research image will be displayed here]</p>
+            <img src="images/mechanum.png" alt="Mecanum-wheel robot">
           </div>
           <p>
-            Estimating object pose from 2D detections and segmented regions using geometric methods
-            (PnP / planar pose estimation). Investigating error factors such as camera-wall angle,
-            perspective distortion, and bounding box deformation, and how these impact stability and accuracy.
+            Developing a ROS-based autonomous navigation system for a four-wheel mecanum robot. Integrates SLAM,
+            path planning, and obstacle avoidance, building capabilities for future applied research.
           </p>
         </div>
 
         <div class="research-item">
-          <h3>Soft Robotics Control under Input Constraints</h3>
-          <!-- Placeholder for research image -->
+          <h3>Reinforcement Learning Control of a Two-Wheeled Inverted Pendulum</h3>
           <div class="research-image-placeholder">
-            <p>[Research image will be displayed here]</p>
+            <img src="images/two_wheel.png" alt="Two-wheeled inverted pendulum robot">
           </div>
           <p>
-            Control design for electro-ionic soft actuators with strict voltage limits. Designing feedforward
-            approaches that reduce performance degradation from saturation and improve rise-time in experiments,
-            with a focus on practical deployability.
+            Applying reinforcement learning to balance and trajectory tracking of a two-wheeled inverted pendulum robot.
+            I designed and built the robot from chassis to electronics, and compare Kalman filter + PID control with RL-based control.
           </p>
         </div>
 
@@ -111,38 +104,49 @@
       <div class="content">
 
         <div class="publication">
+          <h3>Accelerating electro-ionic soft actuators by feedforward control and the performance degradation by voltage limits</h3>
+          <p class="publication-meta">
+            <strong>Author:</strong> Junya Nakada<br>
+            <strong>Type:</strong> International Conference Paper (SPIE, 2024)<br>
+            <strong>Summary:</strong>
+            Joint work with KAIST (South Korea) on faster electro-ionic soft actuators. We found that voltage saturation
+            can degrade performance and clarified the conditions and extent of degradation via simulation and experiments.
+          </p>
+          <div class="research-image-placeholder">
+            <img src="images/SPIE.png" alt="SPIE">
+          </div>
+        </div>
+
+        <div class="publication">
           <h3>Semantic segmentation and pose estimation for automated anchoring of formwork walls</h3>
           <p class="publication-meta">
             <strong>Author:</strong> Junya Nakada<br>
-            <strong>Type:</strong> Master's Thesis, University of Stuttgart (2025)<br>
+            <strong>Type:</strong> Master's Thesis (University of Stuttgart, 2025)<br>
             <strong>Summary:</strong>
-            Proposed a real-time pipeline combining YOLOv8-based semantic segmentation with pose estimation
-            (solvePnP/IPPE) to detect and estimate the orientation/position of formwork anchor holes.
-            Experiments validated accuracy using IMU ground truth, and analyzed failure modes caused by
-            camera-wall angles and perspective-induced distortions.
+            Proposed a real-time pipeline combining YOLOv8-based semantic segmentation with pose estimation to detect and
+            estimate the orientation/position of formwork anchor holes. Validated accuracy using IMU ground truth and analyzed error sources.
           </p>
         </div>
 
         <div class="publication">
-          <h3>Implementation and comparison of AI-based image-processing methods for concrete hollow spheres detection</h3>
+          <h3>Acceleration of Electro-Ionic Soft Actuators by Feedforward Control under Voltage Constraints</h3>
           <p class="publication-meta">
             <strong>Author:</strong> Junya Nakada<br>
-            <strong>Type:</strong> Student Thesis, University of Stuttgart (2024)<br>
+            <strong>Type:</strong> Master's Thesis (Toyohashi University of Technology, 2025)<br>
             <strong>Summary:</strong>
-            Compared a classical image-processing approach (Hough Transform-based detection) with a deep-learning
-            approach (YOLOv8) for detecting concrete hollow spheres in construction environments.
-            Demonstrated stronger robustness/accuracy of the learning-based approach under site-like conditions.
+            Explores acceleration of electro-ionic soft actuators while mitigating performance degradation due to voltage
+            saturation by proposing a feedforward controller. Verified through simulations and experiments.
           </p>
         </div>
 
         <div class="publication">
-          <h3>電圧制限に対応したフィードフォワード制御による Electro-Ionic Soft Actuator の高速化</h3>
+          <h3>Implementation and Comparison of AI-based Image-Processing Methods for Concrete Hollow Sphere Detection</h3>
           <p class="publication-meta">
-            <strong>Author:</strong> 中田 順也<br>
-            <strong>Type:</strong> 修士論文（豊橋技術科学大学, 2025）<br>
+            <strong>Author:</strong> Junya Nakada<br>
+            <strong>Type:</strong> Student Thesis (University of Stuttgart, 2024)<br>
             <strong>Summary:</strong>
-            電圧制限（飽和）による性能劣化を抑えつつ高速化するフィードフォワード制御器を提案。
-            数値シミュレーションと実験で有効性を検証し、従来法と比べ立ち上がり時間を短縮。
+            Compared classical image processing (Hough Transform) with deep learning (YOLOv8) for detecting concrete hollow spheres
+            in construction-like environments, demonstrating the robustness and accuracy of the learning-based approach.
           </p>
         </div>
 
@@ -155,57 +159,50 @@
       <div class="content">
 
         <div class="project">
-          <h3>Real-time Vision + Pose Estimation Pipeline (YOLOv8-seg + PnP/IPPE)</h3>
-          <!-- Placeholder for project image -->
-          <div class="project-image-placeholder">
-            <p>[Project image will be displayed here]</p>
+          <h3>Development of a Steering-type Omnidirectional Mobile Robot</h3>
+          <div class="research-image-placeholder">
+            <img src="images/four_wheel.png" alt="Steering-type omnidirectional robot">
           </div>
           <p class="project-meta">
-            <strong>Role:</strong> Research / Implementation |
-            <strong>Duration:</strong> 2024 - 2025
+            <strong>Role:</strong> Development / Implementation |
+            <strong>Duration:</strong> 2024 - 2025 |
+            <strong>Company:</strong> Kasaero GmbH, Germany
           </p>
           <p>
-            Implemented a real-time detection/segmentation pipeline and integrated geometric pose estimation
-            for formwork anchoring automation. Built evaluation procedures against IMU ground truth and
-            analyzed error sources in real construction-like conditions.
+            Designed and built a ROS-based steering-type omnidirectional mobile robot. Independent drive on four wheels enables motion in any direction.
+            Integrated sensors including RTK-GPS for accurate path tracking, achieving high-speed, stable motion.
           </p>
-          <p><strong>Technologies:</strong> Python, OpenCV, Ultralytics YOLOv8, Intel RealSense, IMU</p>
+          <p><strong>Technologies:</strong> ROS, RTK-GPS, Sensor fusion, CAN communication, Electrical integration, Sensor integration</p>
         </div>
 
         <div class="project">
-          <h3>Concrete Hollow Sphere Detection: Hough Transform vs YOLOv8</h3>
-          <!-- Placeholder for project image -->
-          <div class="project-image-placeholder">
-            <p>[Project image will be displayed here]</p>
-          </div>
+          <h3>Fuel Cell System Development</h3>
           <p class="project-meta">
-            <strong>Role:</strong> Research / Benchmarking |
-            <strong>Duration:</strong> 2024
+            <strong>Role:</strong> Development / Implementation |
+            <strong>Duration:</strong> 2024 - 2025 |
+            <strong>Company:</strong> Kasaero GmbH, Germany
           </p>
           <p>
-            Built a benchmark to compare classical image-processing detection and deep learning detection
-            for concrete hollow spheres. Focused on practical issues such as background noise, occlusion,
-            and generalization.
+            Worked on the design and implementation of a fuel-cell system, including control of the hydrogen supply system and integration of various sensors.
+            Conducted functional tests, data collection, and analysis to optimize system performance.
           </p>
-          <p><strong>Technologies:</strong> Python, OpenCV, YOLOv8, Data labeling / evaluation</p>
+          <p><strong>Technologies:</strong> PLC, CAN communication, Adaptive control, Sensor integration</p>
         </div>
 
         <div class="project">
-          <h3>Feedforward Control for Electro-Ionic Soft Actuator under Voltage Limits</h3>
-          <!-- Placeholder for project image -->
+          <h3>Control Design, Electrical Integration, and Demonstration of a New Drone</h3>
           <div class="project-image-placeholder">
-            <p>[Project image will be displayed here]</p>
+            <img src="images/drone.png" alt="New drone project">
           </div>
           <p class="project-meta">
-            <strong>Role:</strong> Control Design / Experiments |
-            <strong>Duration:</strong> 2024 - 2025
+            <strong>Role:</strong> Control design / Electrical integration / Experiments |
+            <strong>Duration:</strong> 2025 |
+            <strong>Company:</strong> Kasaero GmbH, Germany
           </p>
           <p>
-            Designed a controller that compensates performance loss due to voltage saturation and improves
-            response speed. Validated through simulations and experiments and investigated practical
-            constraints (windup, saturation behavior, reproducibility).
+            Designed the control system, implemented electrical integration, and conducted flight experiments. Tuned motor controllers for stable flight and successfully integrated sensors and flight systems.
           </p>
-          <p><strong>Technologies:</strong> MATLAB/Simulink, Control theory, Experimental setup & measurement</p>
+          <p><strong>Technologies:</strong> EMI mitigation, Motor control, Sensor integration, Flight control systems</p>
         </div>
 
       </div>
@@ -217,22 +214,20 @@
       <div class="content">
         <div class="contact-info">
           <p>
-            <strong>Email:</strong> <a href="mailto:yourname@university.edu">yourname@university.edu</a>
+            <strong>Email:</strong> <a href="mailto:nakada.junya.vt@tut.jp">nakada.junya.vt@tut.jp</a>
           </p>
           <p>
             <strong>Affiliation:</strong>
-            University of Stuttgart (M.Sc.) / Toyohashi University of Technology (M.Eng.)<br>
-            Stuttgart, Germany / Japan
+            Smart Materials Robotics Laboratory, Toyohashi University of Technology
+            (https://smr.me.tut.ac.jp/)
           </p>
           <p>
             <strong>Links:</strong><br>
             <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-            <a href="https://scholar.google.com/citations?user=YOURID" target="_blank">Google Scholar</a> |
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://www.researchgate.net/" target="_blank">ResearchGate</a>
           </p>
           <p class="collaboration-note">
-            I am open to research collaborations and industry partnerships, especially in robotics,
-            computer vision, and control for real-world automation. Please feel free to reach out.
+            I am open to research collaborations and projects. Please feel free to contact me via email.
           </p>
         </div>
       </div>
