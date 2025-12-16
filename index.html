@@ -28,7 +28,7 @@
       </label>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#research">Ongoing Project/Research</a></li>
+        <li><a href="#research">Ongoing Research / Projects</a></li>
         <li><a href="#publications">Theses & Publications</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -48,8 +48,10 @@
         </div>
         <p>
           I am a first-year doctoral student at the Smart Materials Robotics Laboratory, Toyohashi University of Technology.
-          My research areas include control of electro-ionic soft actuators (ionic polymer actuators), robotics using
-          machine learning, and computer vision.
+          My research spans control of electro-ionic soft actuators (ionic polymer actuators), robotics with machine learning,
+          and computer vision. Smart materials such as these are lightweight, flexible, and can be driven at low voltage,
+          but exhibit nonlinearities and hysteresis, which makes precise control challenging. I address these challenges using
+          control theory and machine-learning-based approaches.
         </p>
         <p>
           I worked full-time as an engineer at Kasaero GmbH (Germany) on fuel-cell and UAV systems and the development
@@ -74,8 +76,9 @@
             <img src="images/TCN.png" alt="TCN temperature estimation">
           </div>
           <p>
-            Using a temporal convolutional network (TCN) to estimate the temperature response of a Peltier element in real time from current input.
-            I collect experimental data and evaluate the model’s accuracy and response speed.
+            The temperature dynamics of Peltier elements have significant delay, nonlinear effects, and hysteresis, making accurate control difficult.
+            Such time-dependent systems benefit from temporal models. I use a temporal convolutional network (TCN) to estimate the temperature
+            response from current input in real time, collecting experimental data and evaluating model accuracy and response speed.
           </p>
         </div>
 
@@ -85,8 +88,9 @@
             <img src="images/mechanum.png" alt="Mecanum-wheel robot">
           </div>
           <p>
-            Developing a ROS-based autonomous navigation system for a four-wheel mecanum robot. Integrates SLAM, path planning, and obstacle avoidance,
-            building capabilities for future applied research. With a Google Coral USB accelerator, the system achieves fast image processing and real-time control.
+            ROS is the de-facto framework for robotics with many reusable algorithms and tools. This project builds a ROS-based autonomous navigation
+            system for a four-wheel mecanum robot as a research-ready platform. It integrates SLAM, path planning, obstacle avoidance, and object recognition.
+            With a Google Coral USB accelerator, it achieves fast image processing and real-time control.
           </p>
         </div>
 
@@ -96,8 +100,8 @@
             <img src="images/two_wheel.png" alt="Two-wheeled inverted pendulum robot">
           </div>
           <p>
-            Applying reinforcement learning to balance and trajectory tracking of a two-wheeled inverted pendulum robot.
-            I designed and built the robot from chassis to electronics, and compare Kalman filter + PID control with RL-based control.
+            Leveraging recent progress in physical AI, I apply reinforcement learning to balancing and trajectory tracking of a two-wheeled inverted pendulum.
+            I designed and built the robot from chassis to electronics, and compare Kalman filter–based state estimation + PID control with RL-based control.
           </p>
         </div>
 
@@ -182,7 +186,7 @@
             Designed and built a ROS-based steering-type omnidirectional mobile robot. Independent drive on four wheels enables motion in any direction.
             Integrated sensors including RTK-GPS for accurate path tracking, achieving high-speed, stable motion.
           </p>
-          <p><strong>Technologies:</strong> ROS, RTK-GPS, Sensor fusion, CAN communication, Electrical integration, Sensor integration</p>
+          <p><strong>Technologies:</strong> ROS, RTK-GPS, Sensor fusion, CAN communication, Electrical integration</p>
         </div>
 
         <div class="project">
