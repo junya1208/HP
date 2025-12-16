@@ -143,13 +143,11 @@ nav a:hover {
 
 /* Hamburger base (hidden on desktop) */
 .nav-toggle {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
+    display: none; /* fully hide the checkbox on all screen sizes */
 }
 
 .nav-toggle-label {
-    display: none;
+    display: none; /* hidden on desktop */
     cursor: pointer;
     width: 32px;
     height: 24px;
