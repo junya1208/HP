@@ -141,6 +141,29 @@ nav a:hover {
     color: #3498db;
 }
 
+/* Hamburger base (hidden on desktop) */
+.nav-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    width: 32px;
+    height: 24px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav-toggle-label span {
+    display: block;
+    height: 3px;
+    background: #2c3e50;
+    border-radius: 2px;
+}
+
 /* Language Toggle Button */
 .lang-toggle {
     background-color: #3498db;
@@ -352,6 +375,45 @@ footer {
     .publication,
     .project {
         padding: 15px;
+    }
+
+    /* Mobile hamburger behavior */
+    nav .container {
+        position: relative;
+        padding: 0 20px;
+    }
+
+    .nav-toggle-label {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        align-items: center;
+    }
+
+    /* Hide the menu by default on mobile */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 52px 0 12px; /* leave space for the hamburger */
+    }
+
+    /* Show when toggled */
+    .nav-toggle:checked + .nav-toggle-label + ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
     }
 }
 
