@@ -149,10 +149,6 @@ nav a:hover {
 .nav-toggle-label {
     display: none; /* hidden on desktop */
     cursor: pointer;
-    width: 32px;
-    height: 24px;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .nav-toggle-label span {
@@ -385,10 +381,14 @@ footer {
 
     .nav-toggle-label {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         position: absolute;
         right: 20px;
         top: 12px;
-        align-items: center;
+        width: 32px;
+        height: 24px;
         z-index: 101; /* keep icon above */
     }
 
