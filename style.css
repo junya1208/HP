@@ -380,16 +380,19 @@ footer {
     }
 
     .nav-toggle-label {
+        /* Display and flex properties */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        /* Positioning */
         position: absolute;
-        right: 20px;
         top: 12px;
+        right: 20px;
+        z-index: 101; /* keep icon above */
+        /* Sizing */
         width: 32px;
         height: 24px;
-        z-index: 101; /* keep icon above */
     }
 
     /* Hide the menu by default on mobile */
