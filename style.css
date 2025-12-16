@@ -149,10 +149,6 @@ nav a:hover {
 .nav-toggle-label {
     display: none; /* hidden on desktop */
     cursor: pointer;
-    width: 32px;
-    height: 24px;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .nav-toggle-label span {
@@ -384,12 +380,19 @@ footer {
     }
 
     .nav-toggle-label {
+        /* Display and flex properties */
         display: flex;
-        position: absolute;
-        right: 20px;
-        top: 12px;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        /* Positioning */
+        position: absolute;
+        top: 12px;
+        right: 20px;
         z-index: 101; /* keep icon above */
+        /* Sizing */
+        width: 32px;
+        height: 24px;
     }
 
     /* Hide the menu by default on mobile */
