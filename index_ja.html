@@ -8,13 +8,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
-      <div class="lang-switcher">
-        <a href="index.html" class="lang-link">English</a> | <a href="index_ja.html" class="lang-link active">日本語</a>
+      <div class="top-bar">
+        <div class="lang-switcher">
+          <a href="index.html" class="lang-link">English</a> | <a href="index_ja.html" class="lang-link active">日本語</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="ダークモード切り替え" title="ダークモード切り替え">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
       </div>
-      <h1>中田 順也</h1>
-      <p class="subtitle">M.Sc. | ロボティクス / 知能材料 / 制御</p>
+
+      <div class="hero-content">
+        <img class="hero-avatar" src="images/me.png" alt="中田 順也の写真">
+        <h1>中田 順也</h1>
+        <p class="subtitle">M.Sc. | ロボティクス / 知能材料 / 制御</p>
+        <p class="hero-tagline">
+          知能材料・ロボティクス・制御を専門とする博士学生。イオン導電性高分子アクチュエータから
+          自律移動ロボットまで、知能システムの制御に取り組んでいます。
+        </p>
+        <div class="hero-actions">
+          <a href="#research" class="btn btn-primary">研究を見る</a>
+          <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+        </div>
+        <div class="hero-social">
+          <a href="mailto:nakada.junya.vt@tut.jp" aria-label="メール" title="メール">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M2 6l10 7 10-7"></path></svg>
+          </a>
+          <a href="https://smr.me.tut.ac.jp/" target="_blank" rel="noopener" aria-label="研究室サイト" title="研究室サイト">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"></path></svg>
+          </a>
+          <a href="https://qiita.com/Helles_beer41" target="_blank" rel="noopener" aria-label="Qiita" title="Qiita">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </a>
+          <a href="https://www.researchgate.net/profile/Junya-Nakada" target="_blank" rel="noopener" aria-label="ResearchGate" title="ResearchGate">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -28,7 +60,7 @@
       </label>
       <ul>
         <li><a href="#about">自己紹介</a></li>
-        <li><a href="#research">進行中の研究/プロジェクト</a></li>
+        <li><a href="#research">研究</a></li>
         <li><a href="#publications">論文・成果</a></li>
         <li><a href="#projects">実務プロジェクト</a></li>
         <li><a href="#contact">連絡先</a></li>
@@ -39,13 +71,9 @@
   <main class="container">
 
     <!-- ABOUT -->
-    <section id="about">
-      <h2>自己紹介</h2>
-      <div class="content">
-        <!-- Placeholder for personal photo -->
-        <div class="personal-photo-placeholder">
-          <img class="personal-photo" src="images/me.png" alt="中田 順也の写真">
-        </div>
+    <section id="about" class="section">
+      <h2><span class="section-index">01</span>自己紹介</h2>
+      <div class="content card reveal">
         <p>
           知能材料ロボティクス研究室で博士学生をしている中田順也です。研究分野は、イオン導電性高分子アクチュエータを中心とした知能材料の制御、機械学習を活用したロボティクス、コンピュータビジョンです。将来的に人工筋肉などに応用が期待されているこれら知能材料は、柔軟で軽量、低電圧駆動が可能である一方で、非線形要素やヒステリシス特性を持つため、制御が難しいという課題があります。これらの課題に対して、制御理論や機械学習を活用したアプローチで取り組んでいます。
         </p>
@@ -59,13 +87,19 @@
     </section>
 
     <!-- RESEARCH -->
-    <section id="research">
-      <h2>進行中の研究/プロジェクト</h2>
+    <section id="research" class="section">
+      <h2><span class="section-index">02</span>進行中の研究/プロジェクト</h2>
       <div class="content">
 
-        <div class="research-item">
-          <h3>TCNを用いたペルチェ素子の温度推定</h3>
-          <!-- Placeholder for research image -->
+        <div class="research-item card reveal">
+          <div class="research-item-head">
+            <h3>TCNを用いたペルチェ素子の温度推定</h3>
+            <div class="tags">
+              <span class="tag">TCN</span>
+              <span class="tag">時系列</span>
+              <span class="tag">システム同定</span>
+            </div>
+          </div>
           <div class="research-image-placeholder">
             <img src="images/TCN.png" alt="TCN">
           </div>
@@ -74,9 +108,16 @@
           </p>
         </div>
 
-        <div class="research-item">
-          <h3>メカナムホイール四輪ロボットの自律走行</h3>
-          <!-- Placeholder for research image -->
+        <div class="research-item card reveal">
+          <div class="research-item-head">
+            <h3>メカナムホイール四輪ロボットの自律走行</h3>
+            <div class="tags">
+              <span class="tag">ROS</span>
+              <span class="tag">SLAM</span>
+              <span class="tag">経路計画</span>
+              <span class="tag">Coral TPU</span>
+            </div>
+          </div>
           <div class="research-image-placeholder">
             <img src="images/mechanum.png" alt="メカナムホイール四輪ロボット">
           </div>
@@ -86,9 +127,15 @@
           </p>
         </div>
 
-        <div class="research-item">
-          <h3>強化学習による二輪倒立振子ロボットの制御</h3>
-          <!-- Placeholder for research image -->
+        <div class="research-item card reveal">
+          <div class="research-item-head">
+            <h3>強化学習による二輪倒立振子ロボットの制御</h3>
+            <div class="tags">
+              <span class="tag">強化学習</span>
+              <span class="tag">カルマンフィルタ</span>
+              <span class="tag">PID</span>
+            </div>
+          </div>
           <div class="research-image-placeholder">
             <img src="images/two_wheel.png" alt="二輪倒立振子ロボット">
           </div>
@@ -103,26 +150,35 @@
     </section>
 
     <!-- THESES / PUBLICATIONS -->
-    <section id="publications">
-      <h2>論文・主要成果</h2>
+    <section id="publications" class="section">
+      <h2><span class="section-index">03</span>論文・主要成果</h2>
       <div class="content">
 
-        <div class="publication">
-          <h3>Accelerating electro-ionic soft actuators by feedforward control and the performance degradation by voltage limits</h3>
+        <div class="publication card reveal">
+          <div class="publication-head">
+            <h3>Accelerating electro-ionic soft actuators by feedforward control and the performance degradation by voltage limits</h3>
+            <span class="badge">国際会議</span>
+          </div>
           <p class="publication-meta">
             <strong>著者：</strong> 中田 順也<br>
             <strong>種別：</strong> 国際会議論文（SPIE, 2024年）<br>
-            <strong>論文リンク：</strong> <a href="https://doi.org/10.1117/12.3010552" target="_blank">SPIE 2024</a>　<br>
             <strong>概要：</strong>
             KAIST(South Korea)との共同研究において作製したElectro-Ionic Soft Actuatorの高速化を目指す研究です。アクチュエータに対して、電圧飽和を適用したところ、性能劣化が発生することを発見しました。論文では、どのような条件において、どの程度の性能劣化が発生するかを数値シミュレーションと実験で明らかにしました。
           </p>
+          <a class="paper-link" href="https://doi.org/10.1117/12.3010552" target="_blank" rel="noopener">
+            論文リンク（SPIE 2024）
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+          </a>
           <div class="research-image-placeholder">
             <img src="images/SPIE.png" alt="SPIE">
           </div>
         </div>
 
-        <div class="publication">
-          <h3>Semantic segmentation and pose estimation for automated anchoring of formwork walls</h3>
+        <div class="publication card reveal">
+          <div class="publication-head">
+            <h3>Semantic segmentation and pose estimation for automated anchoring of formwork walls</h3>
+            <span class="badge">修士論文</span>
+          </div>
           <p class="publication-meta">
             <strong>著者：</strong> 中田 順也<br>
             <strong>種別：</strong> 修士論文（University of Stuttgart, 2025年）<br>
@@ -136,8 +192,11 @@
           </div>
         </div>
 
-        <div class="publication">
-          <h3>電圧制限に対応したフィードフォワード制御による Electro-Ionic Soft Actuator の高速化</h3>
+        <div class="publication card reveal">
+          <div class="publication-head">
+            <h3>電圧制限に対応したフィードフォワード制御による Electro-Ionic Soft Actuator の高速化</h3>
+            <span class="badge">修士論文</span>
+          </div>
           <p class="publication-meta">
             <strong>著者：</strong> 中田 順也<br>
             <strong>種別：</strong> 修士論文（豊橋技術科学大学, 2025年）<br>
@@ -146,8 +205,11 @@
           </p>
         </div>
 
-        <div class="publication">
-          <h3>Implementation and Comparison of AI-based Image-Processing Methods for concrete hollow sphere detection</h3>
+        <div class="publication card reveal">
+          <div class="publication-head">
+            <h3>Implementation and Comparison of AI-based Image-Processing Methods for concrete hollow sphere detection</h3>
+            <span class="badge">Student Thesis</span>
+          </div>
           <p class="publication-meta">
             <strong>著者：</strong> 中田 順也<br>
             <strong>種別：</strong> Student Thesis（University of Stuttgart, 2024年）<br>
@@ -162,17 +224,15 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
-      <h2>実務プロジェクト</h2>
+    <section id="projects" class="section">
+      <h2><span class="section-index">04</span>実務プロジェクト</h2>
       <div class="content">
 
-        <div class="project">
+        <div class="project card reveal">
           <h3>ステアリング式全方向移動ロボットの開発</h3>
-          <!-- Placeholder for project image -->
           <div class="research-image-placeholder">
             <img src="images/four_wheel.png" alt="ステアリング式全方向移動ロボット">
           </div>
-          
           <p class="project-meta">
             <strong>役割：</strong> 開発 / 実装 |
             <strong>期間：</strong> 2024年 - 2025年 |
@@ -181,12 +241,18 @@
           <p>
             ROSをベースにしたステアリング式全方向移動ロボットを設計・構築しました。四輪が独立して駆動すること全方向への移動を可能にし、RTK-GPSを含むセンサ統合により、正確な経路追跡機能を実現しました。また、高速で安定した移動性能を達成しました。
           </p>
-          <p><strong>技術：</strong> ROS、RTK-GPS、センサフュージョン、CAN通信、電装インテグレーション</p>
+          <span class="tag-label">使用技術</span>
+          <div class="tags">
+            <span class="tag">ROS</span>
+            <span class="tag">RTK-GPS</span>
+            <span class="tag">センサフュージョン</span>
+            <span class="tag">CAN通信</span>
+            <span class="tag">電装インテグレーション</span>
+          </div>
         </div>
 
-        <div class="project">
+        <div class="project card reveal">
           <h3>燃料電池システムの開発</h3>
-          <!-- Placeholder for project image -->
           <p class="project-meta">
             <strong>役割：</strong> 開発 / 実装 |
             <strong>期間：</strong> 2024年 - 2025年 |
@@ -196,12 +262,17 @@
             燃料電池システムの設計と実装に携わり、水素供給システムの制御や各種センサの統合を担当しました。
             動作試験の実施、データ収集、解析を行い、システムの性能最適化に貢献しました。
           </p>
-          <p><strong>技術：</strong> PLC、CAN通信、適応制御、センサ統合</p>
+          <span class="tag-label">使用技術</span>
+          <div class="tags">
+            <span class="tag">PLC</span>
+            <span class="tag">CAN通信</span>
+            <span class="tag">適応制御</span>
+            <span class="tag">センサ統合</span>
+          </div>
         </div>
 
-        <div class="project">
+        <div class="project card reveal">
           <h3>新型ドローンの制御設計、電装、デモンストレーション</h3>
-          <!-- Placeholder for project image -->
           <div class="project-image-placeholder">
             <img src="images/drone.png" alt="新型ドローン">
           </div>
@@ -213,43 +284,62 @@
           <p>
             新型ドローンの制御システム設計、電装インテグレーション、飛行実験を担当しました。安定した飛行性能を実現するためのモータ制御器の設計と調整を行い、各種センサと飛行システムの統合を成功させました。
           </p>
-          <p><strong>技術：</strong>EMI対策、モータ制御、センサ統合、飛行制御システム</p>
+          <span class="tag-label">使用技術</span>
+          <div class="tags">
+            <span class="tag">EMI対策</span>
+            <span class="tag">モータ制御</span>
+            <span class="tag">センサ統合</span>
+            <span class="tag">飛行制御システム</span>
+          </div>
         </div>
 
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
-      <h2>連絡先情報</h2>
-      <div class="content">
-        <div class="contact-info">
-          <p>
-            <strong>メール：</strong> <a href="mailto:nakada.junya.vt@tut.jp">nakada.junya.vt[at]tut.jp</a>
-          </p>
-          <p>
-            <strong>所属：</strong>
-            豊橋技術科学大学 知能材料ロボティクス研究室
-          </p>
-          <p>
-            <strong>リンク：</strong><br>
-            <a href="https://smr.me.tut.ac.jp/" target="_blank">研究室サイト</a> |
-            <a href="https://qiita.com/Helles_beer41" target="_blank">Qiita</a> |
-            <a href="https://www.researchgate.net/profile/Junya-Nakada" target="_blank">Researchgate</a> |
-          </p>
-          <p class="collaboration-note">
-            共同研究やプロジェクトの提案については、上記のメールアドレスまでお気軽にご連絡ください。
-          </p>
+    <section id="contact" class="section">
+      <h2><span class="section-index">05</span>連絡先情報</h2>
+      <div class="content card reveal contact-card">
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M2 6l10 7 10-7"></path></svg>
+            </span>
+            <div>
+              <span class="contact-label">メール</span>
+              <a href="mailto:nakada.junya.vt@tut.jp">nakada.junya.vt[at]tut.jp</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M9 21v-6h6v6"></path></svg>
+            </span>
+            <div>
+              <span class="contact-label">所属</span>
+              <span>豊橋技術科学大学 知能材料ロボティクス研究室</span>
+            </div>
+          </div>
         </div>
+        <div class="contact-links">
+          <a class="btn btn-outline" href="https://smr.me.tut.ac.jp/" target="_blank" rel="noopener">研究室サイト</a>
+          <a class="btn btn-outline" href="https://qiita.com/Helles_beer41" target="_blank" rel="noopener">Qiita</a>
+          <a class="btn btn-outline" href="https://www.researchgate.net/profile/Junya-Nakada" target="_blank" rel="noopener">ResearchGate</a>
+        </div>
+        <p class="collaboration-note">
+          共同研究やプロジェクトの提案については、上記のメールアドレスまでお気軽にご連絡ください。
+        </p>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <div class="container">
+    <div class="container footer-inner">
       <p>&copy; 2025 中田 順也. All rights reserved.</p>
+      <a href="#about" class="back-to-top">トップに戻る ↑</a>
     </div>
   </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
